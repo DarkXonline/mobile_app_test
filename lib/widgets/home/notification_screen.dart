@@ -1,4 +1,4 @@
-import 'package:hotelp/models/coupons.dart';
+import 'package:wedlock/models/coupons.dart';
 
 import 'package:flutter/material.dart';
 

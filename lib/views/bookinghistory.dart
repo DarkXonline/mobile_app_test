@@ -1,6 +1,6 @@
-import 'package:hotelp/views/home.dart';
-import 'package:hotelp/data/historyutils.dart';
-import 'package:hotelp/widgets/booking/booking_history.dart';
+import 'package:wedlock/views/home.dart';
+import 'package:wedlock/data/historyutils.dart';
+import 'package:wedlock/widgets/booking/booking_history.dart';
 
 import 'package:flutter/material.dart';
 
@@ -59,15 +59,10 @@ class BHistory extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.white70,
-              ),
+              decoration: BoxDecoration(color: Color(0xff7c94b6)),
               child: Text(
                 'Menu',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 24,
-                ),
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
               ),
             ),
             ListTile(

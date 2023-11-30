@@ -1,1 +1,0 @@
- C:\\flutter_project\\(somewhat\ doable\\(.git)\\mobile_app_test\\.dart_tool\\flutter_build\\e857574e8a50d59a96ecc621d07da2d7\\native_assets.yaml: 

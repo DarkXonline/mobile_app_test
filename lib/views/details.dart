@@ -1,8 +1,8 @@
-import 'package:hotelp/widgets/details/photo_details.dart';
-import 'package:hotelp/widgets/pricetext.dart';
-import 'package:hotelp/models/wedding.dart';
-import 'package:hotelp/data/utils.dart';
-import 'package:hotelp/views/notifications.dart';
+import 'package:wedlock/widgets/details/photo_details.dart';
+import 'package:wedlock/widgets/pricetext.dart';
+import 'package:wedlock/models/wedding.dart';
+import 'package:wedlock/data/utils.dart';
+import 'package:wedlock/views/bookingdetails.dart';
 
 import 'package:flutter/material.dart';
 
@@ -22,11 +22,18 @@ class WeddingDetails extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              Row(children: [
                 IconButton(
                   icon: const HeroIcon(HeroIcons.chevronLeft),
                   onPressed: () => Navigator.pop(context),
-                )
+                ),
+                const Row(children: [
+                  SizedBox(width: 5),
+                  Text(
+                    'Package Details',
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
+                  )
+                ]),
               ]),
               const SizedBox(height: 10),
               ClipRRect(
@@ -131,11 +138,9 @@ class WeddingDetails extends StatelessWidget {
       floatingActionButton: GestureDetector(
         onTap: () {
           Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const CouponsDetails(),
-            ),
-          );
+              context,
+              MaterialPageRoute(
+                  builder: (_) => BookingDetails(wedding: wedding)));
         },
         child: Container(
           height: 65,

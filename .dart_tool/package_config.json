@@ -117,9 +117,9 @@
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///C:/Users/ihsan/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.0.1",
+      "rootUri": "file:///C:/Users/ihsan/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "sky_engine",
@@ -200,13 +200,13 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "hotelp",
+      "name": "wedlock",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-11-30T07:45:34.247931Z",
+  "generated": "2023-11-30T10:52:40.713068Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }

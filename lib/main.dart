@@ -1,4 +1,4 @@
-import 'package:hotelp/views/splash.dart';
+import 'package:wedlock/views/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {

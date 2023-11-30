@@ -1,4 +1,4 @@
-import 'package:hotelp/models/historys.dart';
+import 'package:wedlock/models/historys.dart';
 
 import 'package:flutter/material.dart';
 
@@ -9,14 +9,12 @@ class HistoryUtils {
 
   final historys = <Historys>[
     Historys(
-      coupName: 'Black Friday deals',
-      coupDesc: 'Discount 20% off all package on black friday!',
-      coupCode: 'BLACKFRIYAY',
-    ),
+        historyPackage: 'Platinum Package',
+        historyComments: 'Sumpah gempaksss x rugi ooo',
+        historyRate: 5.0),
     Historys(
-      coupName: 'Cyber Monday deals',
-      coupDesc: 'Discount 50% off Platinum Package on Cyber Monday!',
-      coupCode: 'CYBER90',
-    )
+        historyPackage: 'Silver Package',
+        historyComments: 'Servis mantaps, cuma makanan kurang skit je',
+        historyRate: 4.5)
   ];
 }

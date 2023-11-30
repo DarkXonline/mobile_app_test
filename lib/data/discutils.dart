@@ -1,4 +1,4 @@
-import 'package:hotelp/models/coupons.dart';
+import 'package:wedlock/models/coupons.dart';
 
 import 'package:flutter/material.dart';
 
@@ -10,13 +10,13 @@ class DiscUtils {
   final coupons = <Coupons>[
     Coupons(
       coupName: 'Black Friday deals',
-      coupDesc: 'Discount 20% off all package on black friday!',
+      coupDesc: 'Discount 20% off all package on Black Friday!',
       coupCode: 'BLACKFRIYAY',
     ),
     Coupons(
       coupName: 'Cyber Monday deals',
       coupDesc: 'Discount 50% off Platinum Package on Cyber Monday!',
-      coupCode: 'CYBER90',
+      coupCode: 'CYBER50',
     )
   ];
 }

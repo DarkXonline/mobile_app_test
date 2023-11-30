@@ -1,6 +1,6 @@
-import 'package:hotelp/widgets/pricetext.dart';
-import 'package:hotelp/views/details.dart';
-import 'package:hotelp/models/wedding.dart';
+import 'package:wedlock/widgets/pricetext.dart';
+import 'package:wedlock/views/details.dart';
+import 'package:wedlock/models/wedding.dart';
 
 import 'package:flutter/material.dart';
 

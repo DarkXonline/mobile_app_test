@@ -1,4 +1,4 @@
-import 'package:hotelp/models/wedding.dart';
+import 'package:wedlock/models/wedding.dart';
 
 import 'package:flutter/material.dart';
 

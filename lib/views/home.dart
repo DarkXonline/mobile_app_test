@@ -1,7 +1,7 @@
-import 'package:hotelp/widgets/home/wedding_card.dart';
-import 'package:hotelp/views/notifications.dart';
-import 'package:hotelp/views/bookinghistory.dart';
-import 'package:hotelp/data/utils.dart';
+import 'package:wedlock/widgets/home/wedding_card.dart';
+import 'package:wedlock/views/notifications.dart';
+import 'package:wedlock/views/bookinghistory.dart';
+import 'package:wedlock/data/utils.dart';
 
 import 'package:flutter/material.dart';
 
@@ -82,9 +82,7 @@ class Home extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.white70,
-              ),
+              decoration: BoxDecoration(color: Color(0xff7c94b6)),
               child: Text(
                 'Menu',
                 style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),

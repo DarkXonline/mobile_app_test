@@ -1,4 +1,4 @@
-import 'package:hotelp/views/home.dart';
+import 'package:wedlock/views/home.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 

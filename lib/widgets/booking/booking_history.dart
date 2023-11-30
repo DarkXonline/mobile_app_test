@@ -1,6 +1,7 @@
-import 'package:hotelp/models/historys.dart';
+import 'package:wedlock/models/historys.dart';
 
 import 'package:flutter/material.dart';
+import 'package:heroicons/heroicons.dart';
 
 class BookingHistory extends StatelessWidget {
   final Historys historys;
@@ -30,7 +31,7 @@ class BookingHistory extends StatelessWidget {
                     Row(children: [
                       Expanded(
                         child: Text(
-                          historys.coupName,
+                          historys.historyPackage,
                           style: const TextStyle(
                               fontSize: 22, fontWeight: FontWeight.w600),
                         ),
@@ -39,21 +40,28 @@ class BookingHistory extends StatelessWidget {
                     ]),
                     const SizedBox(height: 5),
                     Text(
-                      historys.coupDesc,
+                      historys.historyComments,
                       style: TextStyle(
                           fontSize: 17,
                           color: Colors.grey.shade500,
                           fontWeight: FontWeight.w400),
                     ),
                     const SizedBox(height: 10),
-                    const Text("Use Code:"),
-                    Text(
-                      historys.coupCode,
-                      style: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.red,
-                          fontWeight: FontWeight.w500),
-                    ),
+                    const Text("You Rated:"),
+                    Row(children: [
+                      Text(
+                        historys.historyRate.toString(),
+                        style: const TextStyle(
+                            fontSize: 18,
+                            color: Colors.black54,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      const SizedBox(width: 5),
+                      HeroIcon(HeroIcons.star,
+                          size: 28,
+                          style: HeroIconStyle.solid,
+                          color: Colors.yellow.shade500),
+                    ]),
                     const SizedBox(width: 5),
                   ]),
             )));

@@ -1,4 +1,4 @@
-com.hotelp.hotelp
+com.example.wedlock
 attr activityAction
 attr activityName
 attr alpha

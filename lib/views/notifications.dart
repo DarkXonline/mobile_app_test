@@ -1,5 +1,5 @@
-import 'package:hotelp/data/discutils.dart';
-import 'package:hotelp/widgets/home/notification_screen.dart';
+import 'package:wedlock/data/discutils.dart';
+import 'package:wedlock/widgets/home/notification_screen.dart';
 
 import 'package:flutter/material.dart';
 

@@ -1,8 +1,7 @@
-import 'package:hotelp/widgets/details/photo_details.dart';
-import 'package:hotelp/widgets/pricetext.dart';
-import 'package:hotelp/models/wedding.dart';
-import 'package:hotelp/data/utils.dart';
-import 'package:hotelp/views/notifications.dart';
+import 'package:wedlock/widgets/details/photo_details.dart';
+import 'package:wedlock/widgets/pricetext.dart';
+import 'package:wedlock/models/wedding.dart';
+import 'package:wedlock/widgets/forms/customer_details.dart';
 
 import 'package:flutter/material.dart';
 
@@ -22,25 +21,25 @@ class BookingDetails extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              Row(children: [
                 IconButton(
                   icon: const HeroIcon(HeroIcons.chevronLeft),
                   onPressed: () => Navigator.pop(context),
-                )
-              ]),
-              const Row(children: [
-                SizedBox(width: 5),
-                Text(
-                  'Booking Details',
-                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
-                )
+                ),
+                const Row(children: [
+                  SizedBox(width: 5),
+                  Text(
+                    'Booking Details',
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
+                  )
+                ]),
               ]),
               const SizedBox(height: 10),
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
                   wedding.more['url'],
-                  height: 300,
+                  height: 200,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -72,13 +71,6 @@ class BookingDetails extends StatelessWidget {
                 ])
               ]),
               const SizedBox(height: 5),
-              Text(
-                wedding.briefdesc,
-                style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.grey.shade500,
-                    fontWeight: FontWeight.w400),
-              ),
               MonthlyPrice(price: wedding.price),
               const SizedBox(height: 20),
               Container(
@@ -109,59 +101,18 @@ class BookingDetails extends StatelessWidget {
                     ]),
               ),
               const SizedBox(height: 20),
-              Row(children: [
-                HeroIcon(HeroIcons.informationCircle,
-                    size: 30,
-                    color: $utils.primary,
-                    style: HeroIconStyle.solid),
-                const SizedBox(width: 5),
-                const Text(
-                  'Package description',
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500),
-                ),
-              ]),
-              const SizedBox(height: 15),
-              Text(
-                wedding.description,
+              const SizedBox(width: 5),
+              const Text(
+                'Customer information:',
                 style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.grey.shade500,
-                    fontWeight: FontWeight.w400),
+                    fontSize: 20,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w500),
               ),
-              const SizedBox(height: 90),
+              const SizedBox(height: 15),
+              // Include the MyCustomForm widget here
+              const CustomerDetailsForm(),
             ]),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: GestureDetector(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const CouponsDetails(),
-            ),
-          );
-        },
-        child: Container(
-          height: 65,
-          margin: const EdgeInsets.all(15),
-          decoration: BoxDecoration(
-            color: $utils.primary,
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: const Center(
-            child: Text(
-              'BOOK NOW',
-              style: TextStyle(
-                fontSize: 18,
-                color: Colors.white,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ),
-        ),
       ),
     );
   }

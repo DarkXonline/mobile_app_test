@@ -1,11 +1,11 @@
 class Historys {
-  final String coupName;
-  final String coupDesc;
-  final String coupCode;
+  final String historyPackage;
+  final String historyComments;
+  final double historyRate;
 
   Historys({
-    required this.coupName,
-    required this.coupDesc,
-    required this.coupCode,
+    required this.historyPackage,
+    required this.historyComments,
+    required this.historyRate,
   });
 }
