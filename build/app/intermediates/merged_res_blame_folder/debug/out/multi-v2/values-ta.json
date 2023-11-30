@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\flutter_project\\(somewhat doable\\hotelp-main\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ta\\values-ta.xml",
+            "outputFile": "C:\\Users\\muhdn\\OneDrive\\Desktop\\git smth\\mobile_app_test\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ta\\values-ta.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ihsan\\.gradle\\caches\\transforms-3\\acbce933e4b464a5224ed377a62db1f5\\transformed\\core-1.6.0\\res\\values-ta\\values-ta.xml",
+                    "source": "C:\\Users\\muhdn\\.gradle\\caches\\transforms-3\\acbce933e4b464a5224ed377a62db1f5\\transformed\\core-1.6.0\\res\\values-ta\\values-ta.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

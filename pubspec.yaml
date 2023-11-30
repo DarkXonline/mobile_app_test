@@ -16,9 +16,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # Lottie animation package.
-  lottie: ^2.1.0
-  animated_splash_screen: ^1.3.0
 
   # Hero icon.
   heroicons: ^0.9.0

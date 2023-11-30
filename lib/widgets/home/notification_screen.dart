@@ -19,59 +19,43 @@ class NotificationScreen extends StatelessWidget {
                       spreadRadius: 2,
                       blurRadius: 10)
                 ]),
-            child: Stack(children: [
-              SizedBox(
-                height: 200,
-                width: double.infinity,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(30),
-                ),
-              ),
-              Positioned(
-                bottom: 0,
-                left: 0,
-                right: 0,
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const SizedBox(height: 5),
-                        Row(children: [
-                          Expanded(
-                            child: Text(
-                              coupons.coupName,
-                              style: const TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                          //const Spacer(),
-                        ]),
-                        const SizedBox(height: 5),
-                        Text(
-                          coupons.coupDesc,
-                          style: TextStyle(
-                              fontSize: 17,
-                              color: Colors.grey.shade500,
-                              fontWeight: FontWeight.w400),
-                        ),
-                        const SizedBox(height: 10),
-                        const Text("Use Code:"),
-                        Text(
-                          coupons.coupCode,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(30)),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 5),
+                    Row(children: [
+                      Expanded(
+                        child: Text(
+                          coupons.coupName,
                           style: const TextStyle(
-                              fontSize: 20,
-                              color: Colors.red,
-                              fontWeight: FontWeight.w500),
+                              fontSize: 22, fontWeight: FontWeight.w600),
                         ),
-                        const SizedBox(width: 5),
-                      ]),
-                ),
-              )
-            ])));
+                      ),
+                      //const Spacer(),
+                    ]),
+                    const SizedBox(height: 5),
+                    Text(
+                      coupons.coupDesc,
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.grey.shade500,
+                          fontWeight: FontWeight.w400),
+                    ),
+                    const SizedBox(height: 10),
+                    const Text("Use Code:"),
+                    Text(
+                      coupons.coupCode,
+                      style: const TextStyle(
+                          fontSize: 20,
+                          color: Colors.red,
+                          fontWeight: FontWeight.w500),
+                    ),
+                    const SizedBox(width: 5),
+                  ]),
+            )));
   }
 }
