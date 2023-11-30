@@ -1,4 +1,4 @@
-import 'package:hotelp/widgets/calcprice.dart';
+import 'package:hotelp/widgets/pricetext.dart';
 import 'package:hotelp/views/details.dart';
 import 'package:hotelp/models/wedding.dart';
 

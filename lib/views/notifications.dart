@@ -1,4 +1,4 @@
-import 'package:hotelp/utils/discutils.dart';
+import 'package:hotelp/data/discutils.dart';
 import 'package:hotelp/widgets/home/notification_screen.dart';
 
 import 'package:flutter/material.dart';
@@ -17,11 +17,18 @@ class CouponsDetails extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              Row(children: [
                 IconButton(
                   icon: const HeroIcon(HeroIcons.chevronLeft),
                   onPressed: () => Navigator.pop(context),
                 ),
+                const Row(children: [
+                  SizedBox(width: 5),
+                  Text(
+                    'Notifications',
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
+                  )
+                ]),
               ]),
               const SizedBox(height: 10),
               ListView.separated(

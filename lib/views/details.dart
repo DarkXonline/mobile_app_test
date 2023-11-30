@@ -1,7 +1,7 @@
 import 'package:hotelp/widgets/details/photo_details.dart';
-import 'package:hotelp/widgets/calcprice.dart';
+import 'package:hotelp/widgets/pricetext.dart';
 import 'package:hotelp/models/wedding.dart';
-import 'package:hotelp/utils/utils.dart';
+import 'package:hotelp/data/utils.dart';
 import 'package:hotelp/views/notifications.dart';
 
 import 'package:flutter/material.dart';

@@ -16,7 +16,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # Hero icon.
   heroicons: ^0.9.0
 
