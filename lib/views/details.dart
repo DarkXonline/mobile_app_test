@@ -2,6 +2,7 @@ import 'package:hotelp/widgets/details/photo_details.dart';
 import 'package:hotelp/widgets/calcprice.dart';
 import 'package:hotelp/models/wedding.dart';
 import 'package:hotelp/utils/utils.dart';
+import 'package:hotelp/views/notifications.dart';
 
 import 'package:flutter/material.dart';
 
@@ -127,16 +128,31 @@ class WeddingDetails extends StatelessWidget {
             ]),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: Container(
-        height: 65,
-        margin: const EdgeInsets.all(15),
-        decoration: BoxDecoration(
-            color: $utils.primary, borderRadius: BorderRadius.circular(20)),
-        child: const Center(
-          child: Text(
-            'BOOK NOW',
-            style: TextStyle(
-                fontSize: 18, color: Colors.white, fontWeight: FontWeight.w500),
+      floatingActionButton: GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const CouponsDetails(),
+            ),
+          );
+        },
+        child: Container(
+          height: 65,
+          margin: const EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            color: $utils.primary,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: const Center(
+            child: Text(
+              'BOOK NOW',
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           ),
         ),
       ),
