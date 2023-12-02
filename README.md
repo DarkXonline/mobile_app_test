@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+to run: clone, then do flutter pub get
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
