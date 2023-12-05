@@ -1,8 +1,6 @@
-# mobile_app_cuba_cuba
+# wedlock
 
 A new Flutter project.
-
-to run: clone, then do flutter pub get
 
 ## Getting Started
 

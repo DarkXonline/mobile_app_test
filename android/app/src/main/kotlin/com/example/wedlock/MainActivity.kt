@@ -1,4 +1,4 @@
-package com.example.mobile_app_cuba_cuba
+package com.example.wedlock
 
 import io.flutter.embedding.android.FlutterActivity
 
