@@ -101,7 +101,17 @@ class WeddingDetails extends StatelessWidget {
                         height: 40,
                         color: Colors.black26,
                       ),
-                      Text('${wedding.more['vanue']}',
+                      Text('${wedding.more['venue']}',
+                          style: const TextStyle(
+                              color: Colors.blueGrey,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500)),
+                      Container(
+                        width: 2,
+                        height: 40,
+                        color: Colors.black26,
+                      ),
+                      Text('${wedding.more['pax']} pax',
                           style: const TextStyle(
                               color: Colors.blueGrey,
                               fontSize: 18,

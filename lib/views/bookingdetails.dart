@@ -93,7 +93,17 @@ class BookingDetails extends StatelessWidget {
                         height: 40,
                         color: Colors.black26,
                       ),
-                      Text('${wedding.more['vanue']}',
+                      Text('${wedding.more['venue']}',
+                          style: const TextStyle(
+                              color: Colors.blueGrey,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500)),
+                      Container(
+                        width: 2,
+                        height: 40,
+                        color: Colors.black26,
+                      ),
+                      Text('${wedding.more['pax']} Pax',
                           style: const TextStyle(
                               color: Colors.blueGrey,
                               fontSize: 18,
@@ -103,15 +113,15 @@ class BookingDetails extends StatelessWidget {
               const SizedBox(height: 20),
               const SizedBox(width: 5),
               const Text(
-                'Customer information:',
+                'Bookings Form:',
                 style: TextStyle(
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Colors.blueGrey,
                     fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 15),
               // Include the MyCustomForm widget here
-              const CustomerDetailsForm(),
+              CustomerDetailsForm(wedding: wedding),
             ]),
       ),
     );

@@ -47,7 +47,7 @@ class BookingHistory extends StatelessWidget {
                           fontWeight: FontWeight.w400),
                     ),
                     const SizedBox(height: 10),
-                    const Text("You Rated:"),
+                    const Text("Your Rating:"),
                     Row(children: [
                       Text(
                         historys.historyRate.toString(),
