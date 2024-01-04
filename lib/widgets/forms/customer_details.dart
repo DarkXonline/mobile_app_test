@@ -170,10 +170,8 @@ class CustomerDetailsFormState extends State<CustomerDetailsForm> {
                           backgroundColor: Colors.blueGrey,
                           itemExtent: 30,
                           scrollController:
-                              FixedExtentScrollController(initialItem: 3),
+                              FixedExtentScrollController(initialItem: 0),
                           children: const [
-                            Text('1'),
-                            Text('2'),
                             Text('3'),
                             Text('4'),
                             Text('5'),
@@ -183,7 +181,7 @@ class CustomerDetailsFormState extends State<CustomerDetailsForm> {
                           ],
                           onSelectedItemChanged: (int value) {
                             setState(() {
-                              duration = value;
+                              duration = value + 3;
                             });
                           },
                         ),

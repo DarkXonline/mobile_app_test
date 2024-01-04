@@ -58,6 +58,12 @@ class _PriceCalculatorFormState extends State<PriceCalculatorForm> {
                 //widget.onCouponCodeChanged(couponCode);
               });
             },
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please Specify';
+              }
+              return null;
+            },
           ),
           const SizedBox(height: 20),
           ElevatedButton(

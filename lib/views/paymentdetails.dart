@@ -38,7 +38,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
   static const double wifiPrice = 20.0;
 
   double calculateFinalPrice() {
-    double totalPrice = widget.wedding.price * widget.duration;
+    double totalPrice = widget.wedding.price + (widget.duration * 200);
 
     if (widget.liveBandValue) {
       totalPrice += liveBandPrice;
